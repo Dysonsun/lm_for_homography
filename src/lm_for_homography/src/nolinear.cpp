@@ -35,7 +35,6 @@ namespace lm_for_homography{
             x2_(0, i) = static_cast<double>(fpts_[1][i].x);
             x2_(1, i) = static_cast<double>(fpts_[1][i].y);
         }
-        std::cout << "Init matrix_:" << homography_H_ << std::endl;
     }
 
     E_Mat33 NoLinear::OptimizeHomography() {
